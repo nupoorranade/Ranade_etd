@@ -294,7 +294,7 @@
 }
 
 \newcommand{\ncsu@memberIV}{Member 4 of Committee}
-\newcommand{\ncsu@memberIVtitle}{}
+\newcommand{\ncsu@memberIVtitle}{Technical Consultant}
 \providecommand{\memberIV}[2][]{
     \renewcommand{\ncsu@memberIV}{#2}
     \ifthenelse{\equal{#1}{}}{}{\renewcommand{\ncsu@memberIVtitle}{#1}}
