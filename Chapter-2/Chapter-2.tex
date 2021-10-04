@@ -1,149 +1,71 @@
-\chapter{TABLES, FIGURES AND MATRICES}
+\chapter{PERSPECTIVES ON AUDIENCE INVOLVEMENT}
 \label{chap-two}
-In Chapter \ref{chap-one} we did some typesetting and equations; now let's 
-look at tables, figures, and matrices.
 
-\section{Tables}
-Table \ref{tab:one} is about as simple as they come, to put a formula in a 
-table just use the same methods as putting a formula in a paragraph.  
-Table \ref{tab:two} is a similar table in landscape on a seperate page.  
-%
-\begin{table}
-\caption{Table Example}
-\label{tab:one}
-\begin{center}
-\begin{tabular}{lccl}
-\toprule
-Treatment & No Death & Death & Total\\
-\midrule
-Therapy A & 1295 & 72 & 1367\\
-Therapy B 	& 2294 & 195 & 2489\\
-\midrule
-Total & 3589 & 267 & 3856\\
-\bottomrule
-\end{tabular}
-\end{center}
-\end{table}
+The previous Chapter \ref{chap-one} focused on highlighting the significance of audience contributions to technical communication (TC) work. Software documentation systems cannot be developed without knowing users’ problems, nor can they function without technical communicators who systematically deploy content to users. While technical communicators seek users’ contributions, they also get an opportunity to learn about users’ information seeking behavior. They are in a symbiotic relationship with one another. This chapter continues the discussion on audience involvement, but focuses primarily on previous scholarly research on analyzing those interactions. Following a literature review style, this chapter identifies progressions and investigations in the studies of audiences, especially in the rhetoric and composition fields, along which technical communication is generally placed.
 
-\paragraph{Filler Text} \lipsum[1-2]
-\newgeometry{margin=1in,lmargin=1.25in,footskip=\chapterfootskip, includehead, includefoot}
-%\thispagestyle{lscape}
-%\pagestyle{lscape}
-\thispagestyle{lscapedplain}
-\begin{landscape}
-\begin{table}
-\caption{Landscape Table Example}
-\label{tab:two}
-\begin{center}
-\begin{tabular}{lcccccccccl}
-\toprule
-Patient & A & B & C & D & E & F & G & H &I & Total \\
-\midrule
-John & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 45 \\
-Amy & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 45 \\
-Jim & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 45 \\
-Jason & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 45 \\
-Sandy & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 45 \\
-Icem & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 45 \\
-\midrule
-Total & 6 & 12 & 18 & 24 & 30 & 36 & 42 & 48 & 54 & 270\\
-\bottomrule
-\end{tabular}
-\end{center}
-\end{table}
-\end{landscape}
-%\newgeometry{margin=1in,lmargin=1.25in,footskip=\chapterfootskip, includehead, includefoot,landscape=false}
-\restoregeometry
-\pagestyle{plain}
-\thispagestyle{plain}
-\newgeometry{margin=1in,lmargin=1.25in,footskip=\chapterfootskip, includehead, includefoot}
+This research attempts to study audiences by tracking their interactions with interfaces (such as, user contributions to content platforms like GitHub via pull requests) that are less apparent than the ones traditionally used for analysis (such as, visitors’ comments on websites). To do so, it is important to first review the audience analysis approaches that have been used previously in the broader fields of rhetoric and writing. I use Moretti’s \cite{moretti2000conjectures} method of distant reading to examine literature to not only look at ways in which audiences have been studied in the past, but also to analyze the commonalities, differences and tensions in defining audiences in different fields. Distant reading refers to the “condition of knowledge” \cite{moretti2000conjectures}; instead of looking at just one field in too much detail, Moretti’s approach allows focusing on different units, small and large, that can be traced from the previous literature. The  best  metaphor  that  we  can  use  to understand this method of distant reading is that of a telescope, allowing us, at a distance, to ingest, process, and understand texts within grand perspectives, even while losing some detail of the image. It is important to mention that this method is used for the literature review chapter alone. To complete the research proposed in Chapter \ref{chap-one}, a close study will be conducted that will use both quantitative and qualitative methods, including an analysis of artifacts which will be detailed out in the next chapters. Such analyses will help us to focus on broad characteristics of audiences like communication devices, themes, tropes, genres and genre systems, as well as minute details like the roots and development of audience involvement through infrastructure, writers’ roles and types of user interactions through interfaces.
 
+Literature suggests that audience studies, especially in the writing field, originated in the Rhetoric, Composition, and Technical Communication disciplines \cite{park1982meanings,  breuch2018involving}. Further, audience research was influenced by academics conducting pedagogical research on writing in non-academic settings who realized the need to adapt writing strategies to satisfy the needs of multiple audiences. Academic researchers emphasized exchanging this knowledge with the rhetoric and composition fields because first, they used rhetoric and composition theories and methods to teach technical writing, and second, they were in close proximity to these fields due to their departmental structure; most technical programs are housed in English, Communication, and/or Rhetoric and Composition departments. A distant reading of these disciplines led me to different dichotomies that are associated with the abstract understanding of the audiences in these fields. In Rhetoric, the audience is commonly seen as Active/Passive, Universal/Particular, Situational/ Relational and Fixed/Temporary (flexible). In Composition studies, the audience is commonly seen as Imagined/Role based, and Collective/Individual. In Technical Communication, as Generic/Specific, and Singular/Multiple. It was found that these fields not only learn from each other, but the overlaps can cause certain tensions among these abstractions. In this chapter, I deliberately focus on the definitions of audiences in these fields, the dichotomies, and resulting tensions in situating audiences, especially in today’s technology-driven, social landscape of technical communication.
 
-\section{Figures}
-
-The easiest way to insert a picture is to have that picture in pdf format.  
-\fref{fig:hist1} and \fref{fig:hist2} are two figures typeset normally.
-ETD guidelines allow the use of landscape pages in the electronic 
-submission.  To rotate a page, do NOT use the \texttt{lscape} environment. Instead, use the \texttt{pdflscape} package, for compatibility with PDFlatex.
-Please note, if you are preparing a document for binding, consider
-giving the \texttt{hardcopy} option in the \verb|\documentclass|
-declaration.  This will place the page number at the normal location,
-which is where it should be for printing and binding.
-%
-\begin{figure}[hbtp]
-\centering
-\includegraphics[width=0.6\textwidth]{Chapter-2/figs/pie}
-\caption{Here is a sample figure}
-\label{fig:hist1}
+\begin{figure}[t]
+    \begin{center}
+        \includegraphics[width=0.6\textwidth]{Chapter-2/figs/dichotomies_in_RCT}
+    \end{center}
+    \caption{Audience dichotomies as located in the corresponding fields}
+    \label{fig:ch2.1}
 \end{figure}
 
-For an example of a figure with a really long caption, see Fig.~\ref{fig:longcap}
-\begin{figure}[hbtp]
-\centering
-\calculategraphicstargetheight{11}
-\includegraphics[height=\graphht]{Chapter-2/figs/color_stretched}
-\caption{Here is a HUGE sample figure with a HUGE caption. Our goal is to make a caption that is so long that the caption spills into the lower margin, leading to an ETD error. The way to solve this problem in a systematic way is to calculate how many lines of text the caption will use, then adjust the size of the image, such that it leaves just enough space for your huge caption. How I am solving this problem is by providing a new variable called graphht that stores how tall the image should be. Then, to calculate how tall to make the figure, you use the new function that I am providing called calculategraphicstargetheight. This function has one argument. The argument of the function is how many lines of text you estimate that the caption occupies. You can always run your tex once, measure this number, and type it into the argument for the function. What the function will do (it is defined in the preamble) is take into account the size you give it, the spacing of the chapter and the footer at the bottom, 
-and then calculate the total vertical space available. Thus, this function should be used for images that are taller than they are wide.}
-\label{fig:longcap}
+\section{Dichotomies in audience research}
+This section first traces the dichotomies in audience studies through the three disciplines, Rhetoric, Composition, and Technical Communication, followed by marking their inadequacies in defining audiences. Instead of focusing on one of more dichotomies, I argue that we need approaches that can help us analyze audiences on a continuum of these dichotomies to not only meet the ever-changing needs of audiences, but also to consider the different roles they play in consuming knowledge produced by technical communicators.
+
+The oldest studies on audience come from the field of rhetoric. Audience has been an important concept in rhetoric dating back to ancient Greece, including figures such as Socrates, Isocrates, Plato, and Aristotle \cite{breuch2018involving}. Classical rhetoricians often described audiences as passive listeners, who were merely spectators, and had no power to control the discourse. They were not able to exercise dialectic/didactic abilities because they did not have a chance to question, give feedback or engage actively in forming the discourse \cite{fish1980there}. An active audience is one that engages, interprets and responds to a message in different ways and is capable of challenging the ideas encoded in it. Over time there has been a shift in rhetorical theory toward a more active understanding of audiences. Many factors contributed to this shift, including digital technologies, which played an important role in this shift, and they are evident in the questions theorists are currently asking about audiences \cite{breuch2018involving}.
+
+To address the needs of a passive audience, a rhetor had to learn strategies to assess the audience to understand how they might receive messages. This idea of understanding audiences, who have no control on the communication outcome, was conceptualized in composition studies by Walter \textcite{ong1975writer} as the \textit{imagined} audience. \textcite{ong1975writer} made this point by asserting that the writer’s audience is always a fiction, a concept of the writer’s imagination, squarely within the writer’s control. Ong’s work echoed Walter Gibson’s, who had introduced the notion of the “mock reader,” in his 1950’s article in College English \cite{gibson1950authors} which also relied on the writers’ assumptions about their readers. A “mock reader” is an identity constructed by the author who manipulates the textual reader to adopt the qualities necessary for the actual reader to better understand the message being transmitted \cite{gibson1950authors}. He argued that this notion can be used to evaluate the writing of a book; if the reader finds it difficult to assume the role designed by the author, the book is a “bad” one. Gibson’s article marked the beginning of viewing text as being inseparable from its producer and its user \cite{gibson1950authors}. In 1975, Walter Ong echoed Gibson’s point while suggesting that the writer must “construct in his imagination, clearly or vaguely, an audience cast in some sort of role” (\cite{ong1975writer} p. 12).
+
+While rhetoric and composition disciplines were establishing these abstract positions of audiences through different dichotomies, scholars in the field of technical communication had started building their own methods of identifying audiences, or borrowing them from relevant research. In 1988, \textcite{norman1988psychology} defined the need for UX studies, taking up the lens of cognitive psychology, to explain how users' experiences of using information products (roles) create variations among them. Usability testing sought support from composition studies and relied on the work of \textit{imagined} audiences \cite{ong1975writer} to define personas to help in assuming audience characteristics. \textcite{coney2000role} defined personas as users with specific characteristics which are determined by the technical communicator. They provided different approaches for defining personas based on imagining audience characteristics: 1) credible and inviting personas which persuaded users to engage with the content by using stylistic principles; for example, user forums are platforms where users can post questions or responses to be viewed by other users and the only content is the one created by a participatory mechanism. Credible personas for user forums would be the ones who have roles higher than those of users, like moderators or expert users determined based on their background knowledge as well as participatory activities on the user forum; 2) attractive and playable personas where user characteristics were used for persuasion; for example, creating video content for an urban population demographic, and 3) personas with comfortable relationships with the product. Such personas represent users who are well versed with using the product and are looking for help information. Help is directly related to the context and the issue that users are facing, therefore, exigence becomes critical. The usability testing method attempts to employ the active/passive and imagined/role-based dichotomies, but the extreme polarities create tensions such as \textit{multiplicities} of audience types and the lack of representation of \textit{individual} audience characteristics.
+
+Similar tensions appeared in the other disciplines as well. Audiences' roles were \textit{imagined} and were therefore limited. When composition scholars started adopting Ong’s approach, there were at least two issues: first, if the entire audience was assumed to have the same role, the audience had to be imagined as a \textit{collective} which undermined preservation of individuals’ characteristics. Second, since the act of analyzing audiences was not considered part of the writing process and therefore not a part of the role that writers played, understanding \textit{multiple} audiences to address their needs was not considered, but was increasingly needed in composition classrooms, especially for teaching workplace communication. For example, technical communication practitioners had felt the need to cater to \textit{multiple} audiences like scientists, reviewers, editors, and clients in addition to end users bringing a plethora of needs into consideration \cite{spilka1990orality}. During the late 1980s, Spilka observed that more and more technical-communication specialists were joining rhetoricians in exploring the phenomenon of \textit{multiple} audiences \cite{spilka1990orality}. In researching audiences, technical communicators had to focus their attention on the \textit{individual} needs of multiple audiences in the invention of documents in common workplace settings \cite{spilka1990orality}. Many scholars of the time, including Spilka, thus discovered the incompatibility of audience definitions (\textit{collective/individual, multiple/single}) for real-world scenarios. Audience analysis in rhetorical situations became an important step in communication processes and classrooms and writers were delegated the task of performing it in composition processes.
+
+Lloyd Bitzer's definition of the rhetorical situation, which consists of the exigence, audience, and constraints of a given rhetorical act, became a useful reference point since it helped external circumstances as forming a defining context to which discourse must respond in fitting ways \cite{park1982meanings}. The audience in the rhetorical situation is a defined presence outside the discourse, with certain individual characteristics such as beliefs, attitudes, and relationships to the speaker or writer and to the situation that requires the discourse to have certain characteristics in response \cite{bitzer1968rhetorical}. A rhetorical situation is therefore “a natural context of persons, events, objects, relations, and an exigence which strongly invites utterance; this invited utterance participates naturally in the situation, is in many instances necessary to the completion of situational activity, and by means of its participation with situation, obtains its meaning and its rhetorical character” \cite{park1982meanings}. In Bitzer's terms the more \textit{specific} the rhetorical situation, the more precise its characteristics, including those of the audience, the more it determines the specific features and content of the discourse \cite{bitzer1968rhetorical}. Bitzer argued that the audiences gained power not only to impact the rhetor's role, but to actively engage and disengage from the content creation and consumption process.
+
+As per \textcite{bitzer1968rhetorical}, rhetorical discourse itself comes into existence as a response to a situation, in the same sense that an answer comes into existence in response to a question or a solution in response to a problem. While Bitzer’s focus while defining audiences was primarily on content ecology, Sharon Crowley \cite{crowley1999ancient} provided a new perspective to understand the rhetorical situation, by looking at the origins of the situations, by replacing the exigencies with issues \cite{bitzer1968rhetorical}. Crowley argues that the reception of discourse depends as much upon the rhetor's relation to the audience and the issue discussed as it depends upon the content of the discourse itself \cite{crowley1999ancient}.  These conversations opened new avenues for research on audiences and paved a way for critical analysis of theories on audiences.
+
+The New rhetoric that started after the 1950s, recognizes rhetorical situations as the basic principle of communication and revives invention as an indispensable component of rhetoric. It challenges the classical division between dialectic and rhetoric, seeing rhetoric as a subject that can be applied or analyzed through all sorts of discourse including philosophical, academic, or professional in nature. So audience considerations can be seen as applicable to all discourse types. The New Rhetoric was founded on Chaïm Perelman and L. Olbrechts - Tyteca’s work on argumentation \cite{long1983role}. They stated that argumentation is a meeting of the minds that requires people to share a frame of reference . Therefore, all argumentation must be related to the audience. This led them to looking closely at audiences \cite{long1983role}. They defined audience as "the ensemble of those whom the speaker wishes to influence by argumentation" and introduced the dichotomy of \textit{universal} and \textit{particular} audiences. But this dichotomy was unsuccessful as well. The universal audience consists of any number of people, who are physically present, reasonable and competent. The particular audience on the other hand, is the group chosen by the rhetor to be influenced \cite{perelman1969new}. Because the universal audience requires there to be equality for all speakers, ideas, and audience members, it is not a realistic representation of a situation that would ever occur and thus the idea of a universal audience is not practical. The theory of a universal audience was challenged by several theorists. Henry Johnstone Jr., argued that the philosophical and cultural changes over time are sometimes so great, that arguments cannot be universally effective and understood \cite{hauser2007philosophy}. Simply due to the differences in circumstances, it is impossible for a \textit{universal} audience to exist. The ‘New Rhetoric’ thus paved the path for interaction, conversation, and joint construction of knowledge as important factors for the rhetorical process and as vital sources for invention. These concerns started discussions about how to understand audiences through their interactions with content.
+
+This notion of situating audiences in a rhetorical situation places several other dichotomies such as individual and imagined audiences, on the either extremes of the spectrum. However, doing that makes the similarities and differences in those dichotomies across the disciplines of rhetoric, composition and technical communication more apparent. The meanings of "audience," tend to diverge in two general directions: one toward actual people external to a text, the audience whom the writer must accommodate; the other toward the text itself and the audience implied there, a set of suggested or evoked attitudes, interests, reactions, conditions of knowledge which may or may not fit with the qualities of actual readers or listeners (\cite{park1982meanings}, p. 249).
+
+\section{Audience external to text}
+The first, most literal direction of meaning for "audience" was more widely accepted and followed initially due to its roots in the oral tradition and classical rhetoric. The basic image from which the concept of audience derived was that of a speaker addressing a group of people in a well defined political, legal, or ceremonial situation. The group of people, the audience, listens intently because they have some specific involvement in the situation and the orator persuades them by using various rhetorical devices. The only attempt to understand audience involvement was through the study of enthymemes, the “body of persuasion” by Aristotle. During the construction of the enthymeme, the rhetor must assume that there can be variations among the audience (primarily composed of jury and judges in Aristotelian works) opinions begging for consideration of audiences as active phenomenon \cite{emmel1994toward}. The construction of enthymemes is primarily a matter of deducing from accepted (audience) opinions. The success of enthymemes can be determined from the fact that the content and the number of its premises are adjusted to the intellectual capacities of these varieties of audiences, where the position of the audience remained fixed, at the receiving end of the communication process \cite{emmel1994toward}. In this context, enthymemes were looked upon as a method of persuasion and not as a tool to identify the intellectual differences in audiences. But these ideas were later challenged by scholars who debated that the deductions were suitable only for the oral traditions of communication. Therefore, while enthymemes provided a direction to understand active participation of audiences, the lack of perspective along with the emphasis on oral tradition of communication made enthymemes – as a mode of understanding audiences – disappear from rhetorical discussions only to be revived as a method to understand audience interactions and audience involvement with content in composition classrooms \cite{seas2006enthymematic, emmel1994toward}.
+
+Bitzer defines the enthymeme as a form "whose function is rhetorical persuasion" and whose "successful construction is accomplished through the joint efforts of speaker and audience \cite{seas2006enthymematic}. Enthymemes are rhetorical devices in which terms (claims) construct (when connected) larger claims called premises, which in turn line up as evidence toward a final, overall conclusion. Premises, or \textit{imagined} situations, function both as a new stage of argumentative realization and, as proofs toward yet a higher level of argument, which helps in concluding the enthymeme. It becomes the composer’s job to understand, generate, and connect these hierarchical levels of argument, as they draw on principles both of intention and of function in writing processes \cite{seas2006enthymematic}. But the joint effort also entails the audience's ability to follow the logic of that arrangement and willingly append the argument with those premises that would logically lead to the composer’s conclusion. The formation of enthymemes thus proposes a audience analysis model which solicits collaboration and cooperation between writers, and other stakeholders of the discourse.
+
+In her study, \textcite{spilka1990orality} discovered that audience analysis in rhetorical situations is an important step performed by writers in composition processes. For example, she observed that successful writers were more likely to interact and communicate constantly with audiences or potential users of content produced by the technical writers. Interaction between writers and audience was crucial in determining audience needs as well as resolving incompatibilities and conflicting perceptions or goals between themselves, readers and other audience segments (\cite{spilka1990orality}, p. 45). Similarly,  \textcite{blakeslee2001bridging} discusses the need for social and interactive audience studies especially in scientific conversations. According to her work, audiences are important for the process of invention and innovation. To contribute in the process, audiences should be able to collaborate with scientists and to do so, they need to make sense of the scientific work. This can be done by attending conferences and publishing in journals. Such activities are done by the scientists. While doing that they should not rely on distant guessing about audience characteristics but rather use interactive mechanisms that will transform audiences into self-defining interlocutors \cite{blakeslee2001bridging}. User experience research and human centered design fields that include usability testing are examples of interactive mechanisms required by technical communication scholars, teachers, and practitioners to study audience characteristics.
+
+\textcite{spilka1990orality} proposed an Audience-Adaptation model which can help in analyzing social contexts and interaction for the purpose of inventing documents in naturalistic settings through a step-by-step discourse formation approach. The method starts with an initial round of analyses performed for the purposes of planning. It progresses with building a feedback loop that will allow changing audience definitions along the way. Thus, this process transforms from an independent role of the writer, someone who imagines the audience, conducts audience analysis to confirm audience understanding based on their position as per the rhetorical situation, into a quasi-independent phase where audience definitions are constantly revisited based on the social interactions with the audience  \cite{spilka1990orality} . For the purpose of teaching writing in non-academic settings, researchers primarily focused on audience interactions through qualitative user feedback. The process of writing required writers to use the knowledge gained from the social interactions they have to establish new reader-based goals for their documents. With this approach, writers are more likely to produce documentation perceived by readers as appropriate to their rhetorical situations. Spilka’s research also suggests that although considering the audience as a \textit{collective} is problematic, categorizing readers according to their organizational \textit{roles} does not solve the problem \cite{spilka1990orality} . Rather it can lead to a focus on just one audience segment or feature resulting in mistaken impressions about readers’ needs, expectations, attitudes, and behavior patterns; and to a limited audience analysis that certainly can result in composing decisions destined to further alienate readers. Instead of classifying readers based on their \textit{roles}, we need to focus on methods that are socially sensitive to particular rhetorical situations  \cite{spilka1990orality}. For example, classifying audiences based on who they interact with, what is the kind of information they contribute and on how they react could be useful characteristics to identify \textit{multiple} audiences.
+
+Such examples of collaborative content development processes are still common in today’s technical communication environment. Instead of deviating from the historically prevalent audience dichotomies, they converge on more than one of them, to define the audience in a rhetorical situation. This phenomenon is observed even when audiences are contributing directly to the texts. The next section describes that perspective.
+
+\section{Audience contributing to the text}
+The second direction of the discussion suggests paying close attention to the collaborative work of writers; writers create a context into which readers can enter and to varying degrees become the audience that is implied there. Audience can be involved in the text due to its context in varying degrees. Audience participation in the text needs to be analyzed to understand their needs, characteristics, and roles that can help us define them.
+
+While analyzing works by composition scholars like Andrea Lunsford and Lisa Ede \cite{ede1984audience}, Robert Johnson \cite{johnson1997audience} paid close attention to the idea of collaborative authoring where more than one writers were involved in the writing process. He wanted to reconsider the classical rhetorical understanding of audiences, assumed as a \textit{collective}, as material objects who needed to be informed, persuaded, or entertained. In his work, \textcite{johnson1997audience} argued that the traditional model which is rendered invisible during the act of discourse production must be updated to include involved audience, as audiences are an actual participant in the writing process who create knowledge and determine much of the content of the discourse; "the involved audience bring the audience literally into the open, making the intended audience a visible, physical, collaborative presence" (\cite{johnson1997audience} p. 363). Johnson also suggested that the knowledge creation process consists of two steps: first we need to analyze the needs of users and second we need to analyze the knowledge of users. Therefore, audience definitions need to be grounded in social constructivist theories \cite{johnson1997audience}.
+
+Although the feature of collectiveness of audiences was prevalent, comparisons with other fields revealed specific characteristics of audiences making scholars curious about their intersections. Scholars who engaged closely with technical communication work along with rhetorics and/or composition (such as Miller and Rutter) were able to identify the limitations of dichotomies from each of the fields for studying audiences. \textcite{rutter1991history} argued that technical communication must accept that communication is open-dynamic because it involves people, who cannot be totally predicted, quantified, containerized, or defined. Technical communication has to be rhetorical because its task is not to serve technology abstractly conceived but rather to produce writing that accommodates technology to the user \cite{rutter1991history}. In the late 1970s, Carolyn Miller explained the idea of multiple audiences which can also be seen as parallel to "universal and particular" in rhetoric; "some audiences are capable of seeing some aspects of reality while others are more capable and can see more" \cite{miller1979humanistic}. Based on this phenomenon, although the classification \textit{general} and \textit{specific} should be enough, unfortunately it is not. Imagining audiences and placing them in one of these two categories originates from "positivism" or the tendency to analyze audiences in terms of "levels". Miller argues that the positivist legacy in technical writing encourages us to analyze only the relationship between the reader and the reality (and whether the reader is mentally adequate to the reality) \cite{miller1979humanistic}. As a result, audience adaptation too often becomes an exercise in vocabulary rather than being rhetorically situated. As technical writing remains focused on sciences, Miller argues that the arguments we make while producing content ask for "assent" for "an act of will on the part of the audience". This focus on the persuasive version of audience-specific experience instead of documenting absolute reality, makes technical writing closely related to composition and rhetoric \cite{miller1979humanistic}. Therefore, audience adaptation, a central part of technical writing, needs broader and more flexible methods which will permit analysis of the relationship between the writer and the reader. To do this we need systematic approaches grounded in qualitative and quantitative methods.
+
+While there may be carefully delineated ways in which the aforementioned dichotomies might be beneficial to situate audiences, the extreme polarity in the dichotomies renders them insufficient. For example, when we try to place audiences reading a blog post, it is easier to record their activity as passive, but when they write a comment on the post, the action calls for an active relationship with the text. The active and passive, general and specific, and universal and particular, focus too much on the micro-level questions of how the individual interacts with the discourse, which undervalues the role of individual subjectivities in audience behavior (e.g. \cite{rosenstein1997reconceptualizing}). Conceptualizing the audience-as-mass has consequences if we treat them as a simple summation of individual responses. It focuses too little attention on the audience-as-mass by inviting simple-minded generalizations of how audiences interact with the blog. On the other hand, too much focus on individual audiences can also be problematic. Audiences have characteristics that are invisible at lower levels of analysis \cite{webster2006audience}. To understand such specific, multiple audiences, we need to understand their needs which are influenced by not only what \textit{roles} they play, but also by social contexts and individual interactions and changing rhetorical situations \cite{spilka1990orality}. To do so, technical communicators have become drawn to other fields to understand the phenomenon of audiences that has resulted in several interventions. Some key interventions include, but are not limited to usability studies, cultural studies in technical communication, and purpose-oriented data analysis due to technological breakthroughs.
+
+In Qualitative (literature) and quantitative (data based interventions) methods, there exist tensions that arise from analyzing audiences and situations using interdisciplinary approaches. As the number of disciplines relying on a deep understanding of human behavior in order to achieve a more informed decision making process has increased, so has the number of terms and micro-methods used to conduct user research. With the growth in data and technological updates that engage users, diverse fields such as cognitive psychology and computer science are also participating as user research methods and closely analyzing interfaces that provide a fertile environment to capture micro-interactions made by users. As the industry is becoming more interested in applying the user-based research ideas to technical communication work, the fragmentation of terms and methodologies, along with their interdisciplinary connections, slows adoption and has created a situation in which many companies, though interested, do not have a clear grasp of how to make user research an integral part of their process and get multiple teams within the organization to collaborate on it. Collaborative culture of the workplace should be supplemented by increased attention to humanistic questions of what can we learn about users from their actions. The primary challenge for academic research is defining a focal point that will bring all research from other fields in close proximity, to conduct a closer reading on these fields including the literature and quantitative research as well as collecting data that is timely and captures audience interactions. This challenge culminates from other limitations of data based analysis.
+
+Qualitative feedback mechanisms discussed in Chapter \ref{chap-one}, such as feedback through comments posted on websites, social media posts, results from usability testing, and so on can be rhetorically analyzed to understand users. However, data generated through user actions and interactions with interfaces, such as content inputs on GitHub, digital footprint and audience journeys to access content published on websites, and conversations with users on a platform disconnected from the content publishing environment, gets sidetracked and remains hidden from technical communicators attempting to analyze their users.
+
+One reason could be that describing audience analysis completely using these methods will not suffice to analyze users for the first time. For example, practices like data analytics capture audience characteristics as a whole, but looking closely at them to analyze their needs may not be feasible. On the other hand, interactions through GitHub may not provide a complete picture of audience needs. Audiences that contribute to content creation through GitHub pull requests have a specific need that they try to convey by making updates to the content of product documentation websites. This has a reverse problem. Only particular audiences are analyzed and the subjectivities introduced due to their interactions may not be repeatable. Although this resonates with universal and particular audiences in classical rhetoric, generic and specific audiences in technical communication, which can be defined by making certain assumptions (imagining) about audience journeys and audience footprints on interfaces, the multiplicity of audiences makes using any of these methods in isolation almost impossible. This research plans to define audiences in the modern technological workplace of technical communication by drawing from these historical dichotomies and definitions, but through an understanding of their roles on a continuum instead of focusing on the polarities.
+
+\begin{figure}[t]
+    \begin{center}
+        \includegraphics[width=0.9\textwidth]{Chapter-2/figs/spectrum.png}
+    \end{center}
+    \caption{Audiences lie on spectrum}
+    \label{fig:ch2.2}
 \end{figure}
-%
-\begin{figure}[hbtp]
-\centering
-\includegraphics[width=0.6\textwidth]{Chapter-2/figs/color}
-\caption{Here is a sample figure}
-\label{fig:hist2}
-\end{figure}
-%
-\begin{figure}[hbtp]
-\centering
-\subfloat[]{
-\includegraphics[width=0.4\textwidth]{Chapter-2/figs/pie}
-}
-\subfloat[]{
-\includegraphics[width=0.4\textwidth]{Chapter-2/figs/color}
-}
-\caption{Here are two floating subfigures}
-\label{fig:subfigures}
-\end{figure}
 
-
-\paragraph{Filler Text} \lipsum[12-15]
-
-\newgeometry{margin=1in,lmargin=1.25in,footskip=\chapterfootskip, includehead, includefoot}
-%\thispagestyle{lscaped}
-%\pagestyle{lscaped}
-\thispagestyle{lscapedplain}
-\begin{landscape}
-\begin{figure}
-\centering
-\includegraphics[width=\textwidth]{Chapter-2/figs/sine}
-%\includegraphics[height=\textwidth]{Chapter-2/figs/sine}
-\caption{This figure has been turned sideways.  With large figures, 
-         the author must ensure that there are at least two double spaces
-         between the caption and the page number.}
-\label{fig:hist}
-\end{figure}
-\end{landscape}
-%\newgeometry{margin=1in,lmargin=1.25in,footskip=\chapterfootskip, includehead, includefoot,landscape=false}
-\restoregeometry
-\pagestyle{plain}
-\thispagestyle{plain}
-\newgeometry{margin=1in,lmargin=1.25in,footskip=\chapterfootskip, includehead, includefoot}
-
-
-\section{Matrices}
-Let's look at a simple example of a matrix:
-\[ \left( \begin{array}{ccc}
-a & b & c \\
-d & e & f \\
-g & h & i \end{array} \right)\] 
-%
-You may prefer to write it this way:
-\[ \left[\begin{array} {cccccc}
-1 & 0 & 0 & 0 & 0 & 0 \\
-0 & 1 & 0 & 0 & 0 & 0 \\
-0 & 0 & 1 & 0 & 0 & 0 \\
-0 & 0 & 0 & 1 & 0 & 0 \\
-0 & 0 & 0 & 0 & 1 & 0 \\
-0 & 0 & 0 & 0 & 0 & 1 \\
-\end{array} \right] \]
+In this study I attempt to analyze audiences through their interactions by first looking at the contextual information about user tasks which lie on a spectrum of passive to active interactivity (see Figure \ref{fig:ch2.2}, a factor most usability specialists fail to capture. In the following chapters, I explain how we can understand audiences from what we have learnt through different fields, how we can isolate users from each other and from other entities that get black-boxed with users' actions, to contribute to scholarship about audiences by providing more concrete audience analyses. To do so, I use data from case studies to outline ways that various methods of capturing user data that often get ignored in technical communication theory and practice. The next chapter will describe methods used to collect case studies from practitioner communities and negotiations made to make selections from available ones.
